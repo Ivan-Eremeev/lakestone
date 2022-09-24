@@ -11,7 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
   &__logo {
     display: block;
@@ -64,6 +63,9 @@
     }
   }
   @include media-breakpoint-down(lg) {
+    &__container {
+      flex-wrap: wrap;
+    }
     .container-fluid {
       padding-left: 0;
       padding-right: 0;
@@ -111,9 +113,14 @@
     left: 0;
     width: 100%;
     animation: showStyky 0.5s;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-down(lg) {
       .header__logo {
         margin-top: -100px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      .header__logo {
+        margin-top: 0;
       }
     }
   }
