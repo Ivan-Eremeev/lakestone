@@ -37,6 +37,7 @@
     padding: 22px 26px;
     background-color: $grayBg;
     color: $blackText;
+    transition: .3s;
     &:hover {
       background-color: #EAEAEA;
     }

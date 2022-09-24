@@ -6238,6 +6238,9 @@ body.lock {
   padding: 22px 26px;
   background-color: #F4F4F4;
   color: #000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .category-block__item:hover {
   background-color: #EAEAEA;
