@@ -28,4 +28,41 @@ block content
         .welcome__video(data-vide-bg="video/lakestone-welcome.mp4")
       // /welcome
 
+      // category-block
+      .category-block
+        .container 
+          .category-block__head 
+            .category-block__left 
+              .category-block__title Производство полного цикла 
+              .category-block__sub с нами создаются бренды.
+            .category-block__right Мы изготавливаем изделия из кожи премиум качества. Здесь присутствует краткое и лаконичное описание с кем работает компания.
+          .category-block__items 
+            .row.gy-3 
+              .col-md 
+                a(href="#").category-block__item 
+                  .category-block__img 
+                    img(src="img/categories/img1.png", alt="")
+                  .category-block__name Женские сумки
+              .col-md 
+                a(href="#").category-block__item 
+                  .category-block__img 
+                    img(src="img/categories/img2.png", alt="")
+                  .category-block__name Мужские сумки
+              .col-md 
+                a(href="#").category-block__item 
+                  .category-block__img 
+                    img(src="img/categories/img3.png", alt="")
+                  .category-block__name Рюкзаки
+              .col-md 
+                a(href="#").category-block__item 
+                  .category-block__img 
+                    img(src="img/categories/img4.png", alt="")
+                  .category-block__name Спортивные и дорожные сумки
+              .col-md 
+                a(href="#").category-block__item 
+                  .category-block__more Ещё 
+                    span 16 
+                    | категорий
+      // /category-block
+
     include core/footer.pug

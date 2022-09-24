@@ -57,12 +57,12 @@ $spacers: (
 @import 'bootstrap/bootstrap'; // Подключение бутстрап
 
 // Шрифты
-@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin-100", 100, normal);
-@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin-300", 300, normal);
-@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin-regular", normal, normal);
-@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin-500", 500, normal);
-@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin-700", 700, normal);
-@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin-900", 900, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin_cyrillic-100", 100, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin_cyrillic-300", 300, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin_cyrillic-regular", normal, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin_cyrillic-500", 500, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin_cyrillic-700", 700, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v30-latin_cyrillic-900", 900, normal);
 
 // Цвета
 $blackText: #000;
@@ -80,6 +80,7 @@ $grayBg: #F4F4F4;
 // @import 'blocks/counter';
 @import 'blocks/header';
 @import 'blocks/welcome';
+@import 'blocks/category-block';
 
 @import 'blocks/footer';
 // @import 'blocks/menu';
