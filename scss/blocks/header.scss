@@ -1,0 +1,24 @@
+/* header */
+.header { 
+  
+}
+
+// stiky menu
+#headerSticky {
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: showStyky 0.5s;
+  }
+}
+@keyframes showStyky {
+  0% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+/* /header */
