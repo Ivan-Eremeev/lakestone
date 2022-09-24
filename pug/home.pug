@@ -11,6 +11,21 @@ block content
 
     .content 
 
-      
+      // welcome
+      .welcome
+        .welcome__head 
+          .container 
+            .welcome__title производство кожаных сумок и аксуссуаров
+            .welcome__links 
+              a(href="#").welcome__link Собственный <br>конструкторский отдел
+                .welcome__link-arrow 
+                  svg(class="icon-arrow-right")
+                    use(xlink:href="img/sprite.svg#arrow-right")
+              a(href="#").welcome__link Высочайшее качество <br>выпускаемой продукции
+                .welcome__link-arrow 
+                  svg(class="icon-arrow-right")
+                    use(xlink:href="img/sprite.svg#arrow-right")
+        .welcome__video(data-vide-bg="video/lakestone-welcome.mp4")
+      // /welcome
 
     include core/footer.pug

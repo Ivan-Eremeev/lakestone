@@ -8,10 +8,6 @@
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
 		<title>Главная</title>
-		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
-		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
-		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
-		<link rel="stylesheet" href="css/plugins/nouislider.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body> 
@@ -19,12 +15,11 @@
 			<!-- header-->
 			<header class="header" id="headerSticky">
 				<div class="container">
-					<div class="header__container">
-						<div class="header__logo"><img src="img/logo.svg" alt=""></div>
+					<div class="header__container"><a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a>
 						<div class="header__hamburger"> </div>
 						<nav class="header__menu"> 
 							<ul class="header__list"> 
-								<li> <a href="#">главная</a></li>
+								<li> <a class="active" href="#">главная</a></li>
 								<li> <a href="#">О производстве</a></li>
 								<li> <a href="#">продукция</a></li>
 								<li> <a href="#">вакансии</a></li>
@@ -35,17 +30,35 @@
 				</div>
 			</header>
 			<!--	/header-->
-			<div class="content"> </div>
+			<div class="content"> 
+				<!-- welcome-->
+				<div class="welcome">
+					<div class="welcome__head"> 
+						<div class="container"> 
+							<div class="welcome__title">производство кожаных сумок и аксуссуаров</div>
+							<div class="welcome__links"> <a class="welcome__link" href="#">Собственный <br>конструкторский отдел
+									<div class="welcome__link-arrow"> 
+										<svg class="icon-arrow-right">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</div></a><a class="welcome__link" href="#">Высочайшее качество <br>выпускаемой продукции
+									<div class="welcome__link-arrow"> 
+										<svg class="icon-arrow-right">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</div></a></div>
+						</div>
+					</div>
+					<div class="welcome__video" data-vide-bg="video/lakestone-welcome.mp4"></div>
+				</div>
+				<!-- /welcome-->
+			</div>
 			<!-- footer-->
 			<footer class="footer"></footer>
 			<!--	/footer-->
 		</div>
 		<script src="js/jquery.min.js"> </script>
-		<script src="js/plugins/swiper-bundle.min.js"> </script>
-		<script src="js/plugins/air-datepicker.js"> </script>
-		<script src="js/plugins/jquery.magnific-popup.min.js"> </script>
-		<script src="js/plugins/sticky-sidebar.js"> </script>
-		<script src="js/plugins/nouislider.min.js"> </script>
+		<script src="js/plugins/jquery.vide.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
