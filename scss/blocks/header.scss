@@ -1,6 +1,31 @@
 /* header */
 .header { 
-  
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    
+  }
+  &__hamburger {
+    display: none;
+  }
+  &__menu {
+    
+  }
+  &__list {
+    display: flex;
+    margin-left: -50px;
+    li {
+      margin-left: 50px;
+      a {
+        display: block;
+        padding: 25px 0;
+        white-space: nowrap;
+      }
+    }
+  }
 }
 
 // stiky menu
