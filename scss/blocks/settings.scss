@@ -32,6 +32,12 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 67px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 115px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 55px;
+  }
 }
 .content {
   flex-grow: 1;

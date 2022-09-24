@@ -14,17 +14,21 @@
 		<div class="page"> 
 			<!-- header-->
 			<header class="header" id="headerSticky">
-				<div class="container">
-					<div class="header__container"><a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a>
-						<div class="header__hamburger"> </div>
+				<div class="container-fluid container-lg">
+					<div class="header__container">
+						<div class="container">
+							<div class="header__hamburger"> </div><a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a>
+						</div>
 						<nav class="header__menu"> 
-							<ul class="header__list"> 
-								<li> <a class="active" href="#">главная</a></li>
-								<li> <a href="#">О производстве</a></li>
-								<li> <a href="#">продукция</a></li>
-								<li> <a href="#">вакансии</a></li>
-								<li> <a href="#">контакты</a></li>
-							</ul>
+							<div class="container">
+								<ul class="header__list"> 
+									<li> <a class="active" href="#">главная</a></li>
+									<li> <a href="#">О производстве</a></li>
+									<li> <a href="#">продукция</a></li>
+									<li> <a href="#">вакансии</a></li>
+									<li> <a href="#">контакты</a></li>
+								</ul>
+							</div>
 						</nav>
 					</div>
 				</div>
@@ -55,29 +59,30 @@
 				<!-- category-block-->
 				<div class="category-block">
 					<div class="container"> 
+						<div class="category-block__sub d-lg-none d-md-block d-none">с нами создаются бренды.</div>
 						<div class="category-block__head"> 
 							<div class="category-block__left"> 
 								<div class="category-block__title">Производство полного цикла </div>
-								<div class="category-block__sub">с нами создаются бренды.</div>
+								<div class="category-block__sub d-lg-block d-md-none d-block">с нами создаются бренды.</div>
 							</div>
 							<div class="category-block__right">Мы изготавливаем изделия из кожи премиум качества. Здесь присутствует краткое и лаконичное описание с кем работает компания.</div>
 						</div>
 						<div class="category-block__items"> 
 							<div class="row gy-3"> 
-								<div class="col-md"> <a class="category-block__item" href="#"> 
+								<div class="col-lg col-sm-6"><a class="category-block__item" href="#"> 
 										<div class="category-block__img"> <img src="img/categories/img1.png" alt=""></div>
 										<div class="category-block__name">Женские сумки</div></a></div>
-								<div class="col-md"> <a class="category-block__item" href="#"> 
+								<div class="col-lg col-sm-6"><a class="category-block__item" href="#"> 
 										<div class="category-block__img"> <img src="img/categories/img2.png" alt=""></div>
 										<div class="category-block__name">Мужские сумки</div></a></div>
-								<div class="col-md"> <a class="category-block__item" href="#"> 
+								<div class="col-lg col-sm-4"><a class="category-block__item" href="#"> 
 										<div class="category-block__img"> <img src="img/categories/img3.png" alt=""></div>
 										<div class="category-block__name">Рюкзаки</div></a></div>
-								<div class="col-md"> <a class="category-block__item" href="#"> 
+								<div class="col-lg col-sm-4"><a class="category-block__item" href="#"> 
 										<div class="category-block__img"> <img src="img/categories/img4.png" alt=""></div>
 										<div class="category-block__name">Спортивные и дорожные сумки</div></a></div>
-								<div class="col-md"> <a class="category-block__item" href="#"> 
-										<div class="category-block__more">Ещё <span>16 </span>категорий</div></a></div>
+								<div class="col-lg col-sm-4"><a class="category-block__item" href="#"> 
+										<div class="category-block__more"> <span>Ещё <strong>16 </strong>категорий</span></div></a></div>
 							</div>
 						</div>
 					</div>

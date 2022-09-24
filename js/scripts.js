@@ -8,9 +8,9 @@ window.onload = function () {
       headerToggleClass();
     });
     function headerToggleClass() {
-      if ($(window).scrollTop() > headerTop + 100) {
+      if ($(window).scrollTop() > headerTop + 130) {
         header.addClass('sticky');
-      } else {
+      } else if ($(window).scrollTop() <= headerTop) {
         header.removeClass('sticky');
       }
     }

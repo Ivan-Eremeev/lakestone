@@ -4,11 +4,13 @@
   &__head {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 55px;
   }
   &__left {
     width: 100%;
     max-width: 870px;
+    margin-right: 20px;
   }
   &__title {
     font-weight: 500;
@@ -24,6 +26,7 @@
   &__right {
     max-width: 450px;
     font-size: 18px;
+    line-height: 145.5%;
     color: $grayText;
   }
   &__items {
@@ -60,10 +63,107 @@
     font-weight: 300;
     font-size: 22px;
     line-height: 118.19%;
-    border-bottom: 1px solid #C6C6C6;
     text-align: center;
     span {
+      border-bottom: 1px solid #C6C6C6;
+    }
+    strong {
       font-weight: normal;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    &__img {
+      height: 240px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__sub {
+      font-size: 43px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 20px 0 30px;
+    &__head {
+      margin-bottom: 52px;
+    }
+    &__title {
+      font-size: 43px;
+    }
+    &__sub {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    &__right {
+      max-width: 360px;
+      font-size: 16px;
+    }
+    &__img {
+      height: 265px;
+    }
+    &__items {
+      > .row {
+        > * {
+          &:nth-child(1), &:nth-child(2) {
+            .category-block__img {
+              height: 477px;
+            }
+          }
+        }
+      }
+    }
+    &__more {
+      font-size: 20px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__head {
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+    &__img {
+      height: 200px;
+    }
+    &__items {
+      > .row {
+        > * {
+          &:nth-child(1), &:nth-child(2) {
+            .category-block__img {
+              height: 355px;
+            }
+          }
+        }
+      }
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__sub {
+      font-size: 27px;
+    }
+    &__name {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__img {
+      height: 355px !important;
+    }
+    &__items {
+      >.row {
+        >* {
+          &:nth-child(4) {
+            .category-block__item {
+              display: none;
+            }
+          }
+          &:nth-child(5) {
+            .category-block__item {
+              background-color: transparent;
+            }
+          }
+        }
+      }
     }
   }
 }

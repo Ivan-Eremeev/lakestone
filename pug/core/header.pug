@@ -1,20 +1,22 @@
 // header
 header#headerSticky.header
-  .container
+  .container-fluid.container-lg
     .header__container
-      a(href="#").header__logo
-        img(src="img/logo.svg", alt="")
-      .header__hamburger 
+      .container
+        .header__hamburger 
+        a(href="#").header__logo
+          img(src="img/logo.svg", alt="")
       nav.header__menu 
-        ul.header__list 
-          li 
-            a(href="#").active главная
-          li 
-            a(href="#") О производстве
-          li 
-            a(href="#") продукция
-          li 
-            a(href="#") вакансии
-          li 
-            a(href="#") контакты
+        .container
+          ul.header__list 
+            li 
+              a(href="#").active главная
+            li 
+              a(href="#") О производстве
+            li 
+              a(href="#") продукция
+            li 
+              a(href="#") вакансии
+            li 
+              a(href="#") контакты
 //	/header

@@ -57,5 +57,52 @@
   &__video {
     height: 690px;
   }
+  @include media-breakpoint-down(xxl) {
+    &__title {
+      max-width: 430px;
+      font-size: 42px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__links {
+      max-width: 290px;
+      flex-wrap: wrap;
+      font-size: 16px;
+      margin-left: 0;
+    }
+    &__link {
+      justify-content: space-between;
+      width: 100%;
+      margin: 15px 0;
+      margin-left: 0;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0 20px;
+    &__head {
+      margin-bottom: 25px;
+    }
+    &__title {
+      max-width: 370px;
+    }
+    &__video {
+      height: 477px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 40px 0 15px;
+    &__head {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 35px;
+    }
+    &__links {
+      display: none;
+    }
+    &__video {
+      height: 211px;
+    }
+  }
 }
 /* /welcome */

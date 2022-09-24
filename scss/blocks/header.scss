@@ -16,6 +16,12 @@
   &__logo {
     display: block;
     max-width: 250px;
+    padding: 20px 0;
+    margin-right: 20px;
+    transition: .2s;
+    img {
+      display: block;
+    }
   }
   &__hamburger {
     display: none;
@@ -48,6 +54,53 @@
       }
     }
   }
+  @include media-breakpoint-up(lg) {
+    &__container {
+      .container {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__logo {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 25px 0;
+    }
+    &__menu {
+      width: 100%;
+      border-top: 1px solid #D9D9D9;
+    }
+    &__list {
+      li {
+        a {
+          padding: 16px 0;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__hamburger {
+      
+    }
+    &__logo {
+      max-width: 176px;
+      padding: 21px 0;
+      margin-right: 0;
+    }
+    &__menu {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -800px;
+    }
+  }
 }
 
 // stiky menu
@@ -58,6 +111,11 @@
     left: 0;
     width: 100%;
     animation: showStyky 0.5s;
+    @include media-breakpoint-up(md) {
+      .header__logo {
+        margin-top: -100px;
+      }
+    }
   }
 }
 @keyframes showStyky {
