@@ -9,7 +9,7 @@
   }
   &__left {
     width: 100%;
-    max-width: 870px;
+    max-width: 800px;
     margin-right: 20px;
   }
   &__title {
@@ -24,7 +24,7 @@
     text-align: right;
   }
   &__right {
-    max-width: 450px;
+    max-width: 430px;
     font-size: 18px;
     line-height: 145.5%;
     color: $grayText;
@@ -78,16 +78,16 @@
   }
   @include media-breakpoint-down(xl) {
     &__sub {
-      font-size: 43px;
+      font-size: 45px;
     }
   }
   @include media-breakpoint-down(lg) {
     padding: 20px 0 30px;
     &__head {
-      margin-bottom: 52px;
+      margin-bottom: 45px;
     }
     &__title {
-      font-size: 43px;
+      font-size: 45px;
     }
     &__sub {
       text-align: left;
@@ -138,7 +138,7 @@
       font-size: 30px;
     }
     &__sub {
-      font-size: 27px;
+      font-size: 26px;
     }
     &__name {
       font-size: 20px;

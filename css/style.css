@@ -5888,46 +5888,9 @@ h1, h2, h3 {
   }
 }
 @font-face {
-  font-family: "Roboto";
-  font-weight: 100;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-100.eot");
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-100.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-100.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-100.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-100.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-100.svg") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-300.eot");
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-300.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-300.svg") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.eot");
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-regular.svg") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-500.eot");
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-500.svg") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-700.eot");
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-700.svg") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 900;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-900.eot");
-  src: url("../fonts/roboto/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto/roboto-v30-latin_cyrillic-900.svg") format("svg");
+  font-family: "Roboto Flex Variable";
+  src: url("../fonts/roboto/RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf") format("truetype");
+  font-weight: 1 999;
 }
 /* settings */
 a {
@@ -5940,16 +5903,18 @@ a {
 button,
 input,
 textarea {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex Variable", sans-serif;
   font-size: 16px;
+  font-weight: normal;
   color: #000;
 }
 
 body {
   min-width: 319px;
   background-color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex Variable", sans-serif;
   font-size: 16px;
+  font-weight: normal;
   color: #000;
 }
 body.lock {
@@ -6025,6 +5990,13 @@ body.lock {
 }
 .navpage ul li {
   margin: 10px 0;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 /* /settings */
@@ -6337,12 +6309,12 @@ body.lock {
 @media (max-width: 1499.98px) {
   .welcome__title {
     max-width: 430px;
-    font-size: 42px;
+    font-size: 45px;
   }
 }
 @media (max-width: 1199.98px) {
   .welcome__links {
-    max-width: 290px;
+    max-width: 280px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     font-size: 16px;
@@ -6362,7 +6334,7 @@ body.lock {
     padding: 40px 0 20px;
   }
   .welcome__head {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .welcome__title {
     max-width: 370px;
@@ -6408,7 +6380,7 @@ body.lock {
 }
 .category-block__left {
   width: 100%;
-  max-width: 870px;
+  max-width: 800px;
   margin-right: 20px;
 }
 .category-block__title {
@@ -6423,7 +6395,7 @@ body.lock {
   text-align: right;
 }
 .category-block__right {
-  max-width: 450px;
+  max-width: 430px;
   font-size: 18px;
   line-height: 145.5%;
   color: #585858;
@@ -6490,7 +6462,7 @@ body.lock {
 }
 @media (max-width: 1199.98px) {
   .category-block__sub {
-    font-size: 43px;
+    font-size: 45px;
   }
 }
 @media (max-width: 991.98px) {
@@ -6498,10 +6470,10 @@ body.lock {
     padding: 20px 0 30px;
   }
   .category-block__head {
-    margin-bottom: 52px;
+    margin-bottom: 45px;
   }
   .category-block__title {
-    font-size: 43px;
+    font-size: 45px;
   }
   .category-block__sub {
     text-align: left;
@@ -6537,7 +6509,7 @@ body.lock {
     font-size: 30px;
   }
   .category-block__sub {
-    font-size: 27px;
+    font-size: 26px;
   }
   .category-block__name {
     font-size: 20px;
