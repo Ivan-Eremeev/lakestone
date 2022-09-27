@@ -1,5 +1,100 @@
 /* footer */
 .footer { 
-  
+  padding: 20px 0;
+  border-top: 1px solid #E6E6E6;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__license {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__logo {
+    img {
+      display: block;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $blackText;
+  }
+  &__link-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: $blackText;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        border: 1px solid $blackText;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulsation 3s linear 1.5s infinite;
+      }
+    &:after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      border: 1px solid $blackText;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      animation: pulsation 3s linear infinite;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 0;
+    &__container {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    &__logo {
+      margin-bottom: 15px;
+    }
+    &__link {
+      order: 1;
+      border-bottom: 1px solid $blackText;
+      margin-bottom: 20px;
+    }
+    &__link-circle {
+      display: none;
+    }
+    &__license {
+      order: 2;
+      padding: 15px 0 10px;
+      border-top: 1px solid #E6E6E6;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes pulsation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
 }
 /* /footer */

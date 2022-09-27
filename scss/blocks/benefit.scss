@@ -6,7 +6,8 @@
     height: 100%;
     padding: 66px 40px;
     position: relative;
-    &:hover {
+    @include media-breakpoint-up(lg) {
+      &:hover {
       .benefit__title {
         color: #fff;
       }
@@ -16,6 +17,7 @@
       .benefit__video  {
         opacity: 1;
       }
+    }
     }
   }
   &__video {
@@ -44,6 +46,54 @@
     line-height: 135.5%;
     color: $grayText;
     transition: 0.1s;
+  }
+  @include media-breakpoint-down(xxl) {
+    &__item {
+      padding: 45px 20px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__item {
+      padding: 20px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding-top: 40px;
+    padding-bottom: 85px;
+    .row {
+      margin-left: -35px;
+      margin-right: -35px;
+      margin-top: -35px;
+      > * {
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 35px;
+      }
+    }
+    &__item {
+      padding: 0;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 15px;
+    padding-bottom: 48px;
+    .row {
+      margin-top: 0;
+      > * {
+        padding-top: 0;
+        &:not(:last-child) {
+          .benefit__item {
+            border-bottom: 1px solid #E6E6E6;
+          }
+        }
+      }
+    }
+    &__item {
+      padding: 20px 0;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
   }
 }
 /* /benefit */
