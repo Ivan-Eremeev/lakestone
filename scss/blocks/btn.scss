@@ -1,0 +1,26 @@
+/* btn */
+.btn { 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 35px;
+  border: 1px solid #000;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: $blackText;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: .3s;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  &:focus {
+    background-color: #464646;
+    color: #fff;
+  }
+}
+/* /btn */
