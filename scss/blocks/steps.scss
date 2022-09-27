@@ -1,0 +1,143 @@
+/* steps */
+.steps { 
+  padding: 50px 0 84px;
+  background-color: #2E2E2E;
+  color: #fff;
+  &__slider {
+    position: relative;
+    .swiper-slide {
+      background-color: #2E2E2E;
+    }
+  }
+  &__item {
+    display: flex;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 1px;
+  }
+  &__sub {
+    font-weight: 100;
+    font-size: 55px;
+    line-height: 105.69%;
+    margin-bottom: 32px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 104%;
+    margin-bottom: 21px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 145.5%;
+    margin-bottom: 20px;
+  }
+  &__controll {
+    display: flex;
+    margin-top: auto;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-weight: 300;
+    color: #fff;
+    fill: #fff;
+    text-transform: uppercase;
+    position: static;
+    margin-top: 0;
+    &:after {
+      display: none;
+    }
+    svg {
+      width: 14px;
+      height: 8px;
+      transition: .3s;
+    }
+    span {
+      border-bottom: 1px solid #fff;
+    }
+    &--prev {
+      margin-right: 30px;
+      svg {
+        margin-right: 15px;
+        transform: rotate(180deg);
+      }
+      &:hover {
+        svg {
+          transform: rotate(180deg) translate(15px,0);
+        }
+      }
+    }
+    &--next {
+      svg {
+        margin-left: 15px;
+      }
+      &:hover {
+        svg {
+          transform: translate(15px,0);
+        }
+      }
+    }   
+  }
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-right: 85px;
+  }
+  &__img {
+    &:nth-child(1) {
+      width: 280px;
+      height: 400px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &:nth-child(2) {
+      width: 261px;
+      height: 350px;
+      margin-top: 185px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    img {
+      
+    }
+  }
+  &__pagination-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    z-index: 1;
+  }
+  &__pagination {
+    width: 1px !important;
+    position: static;
+    margin: 10px 0;
+    background-color: #565656;
+    .swiper-pagination-progressbar-fill {
+      background-color: #fff;
+    }
+  }
+  &__pagination-num {
+    flex-shrink: 0;
+  }
+}
+/* /steps */

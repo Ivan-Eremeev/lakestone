@@ -17,30 +17,27 @@ window.onload = function () {
   };
   stikyMenu($('#headerSticky'));
 
-  // // Swiper | Слайдер
-  // if ($('#swiper').length) {
-  //   const swiper = new Swiper('#swiper', {
-  //     // Optional parameters
-  //     slidesPerView: 1,
-
-  //     // If we need pagination
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //       clickable: true,
-  //     },
-
-  //     // Navigation arrows
-  //     navigation: {
-  //       nextEl: '.swiper-button-next',
-  //       prevEl: '.swiper-button-prev',
-  //     },
-
-  //     // And if we need scrollbar
-  //     scrollbar: {
-  //       el: '.swiper-scrollbar',
-  //     },
-  //   });
-  // }
+  // Swiper | Слайдер
+  if ($('#stepsSlider').length) {
+    const stepsSlider = new Swiper('#stepsSlider', {
+      slidesPerView: 1,
+      effect: 'fade',
+      navigation: {
+        nextEl: '.steps__button--next',
+        prevEl: '.steps__button--prev',
+      },
+      pagination: {
+        el: ".steps__pagination",
+        type: "progressbar",
+        progressbarOpposite: true,
+      },
+    });
+    if (stepsSlider.slides.length < 10) {
+      $('.steps__pagination-num--all').text('0' + stepsSlider.slides.length);
+    }else {
+      $('.steps__pagination-num--all').text(stepsSlider.slides.length);
+    }
+  }
 
   // // Air Datepicker | Календарь
   // new AirDatepicker('#airDatepicker', {
