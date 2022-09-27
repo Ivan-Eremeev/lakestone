@@ -67,4 +67,49 @@ block content
                       | категорий
       // /category-block
 
+      // about-block
+      .about-block.d-none.d-xl-block
+        .container 
+          .about-block__container 
+            .about-block__title Наше производство — это, прежде всего, люди.
+            .about-block__left 
+              .about-block__left-img 
+                img(src="img/about-block/img1.jpg", alt="")
+              .about-block__content 
+                .about-block__left-text Безусловно, материалы, оборудование, технологические процессы — неотъемлемая часть производства, но без людей они остаются всего лишь материалом.
+                .about-block__sub БОЛЕЕ 80 СОТРУДНИКОВ
+                .about-block__right-text Мы подходили к нашей команде на производстве, задавая одни и те же вопросы: «Почему вам не надоедает ваша работа?», «В чем секрет улыбки во время работы, почему работа не превращается в рутину, откуда вдохновение?».
+                .about-block__right-img 
+                  img(src="img/about-block/img2.jpg", alt="")
+                .about-block__right-link
+                  a(href="#") 
+                    span подробнее о производстве
+                    svg(class="icon-arrow-right")
+                      use(xlink:href="img/sprite.svg#arrow-right")
+
+      // /about-block
+
+      // about-block
+      .about-block.d-block.d-xl-none
+        .container 
+          .about-block__title Наше производство — это, прежде всего, люди.
+          .about-block__left 
+            .about-block__left-img 
+              img(src="img/about-block/img1.jpg", alt="")
+            .about-block__left-text Безусловно, материалы, оборудование, технологические процессы — неотъемлемая часть производства, но без людей они остаются всего лишь материалом.
+
+          .about-block__sub БОЛЕЕ 80 СОТРУДНИКОВ
+
+          .about-block__right 
+            .about-block__content 
+              .about-block__right-text Мы подходили к нашей команде на производстве, задавая одни и те же вопросы: «Почему вам не надоедает ваша работа?», «В чем секрет улыбки во время работы, почему работа не превращается в рутину, откуда вдохновение?».
+              .about-block__right-link
+                a(href="#") 
+                  span подробнее о производстве
+                  svg(class="icon-arrow-right")
+                    use(xlink:href="img/sprite.svg#arrow-right")
+            .about-block__right-img 
+              img(src="img/about-block/img2.jpg", alt="")
+      // /about-block
+
     include core/footer.pug
