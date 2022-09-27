@@ -134,44 +134,58 @@ block content
               .swiper-wrapper 
                 .swiper-slide 
                   .steps__item 
-                    .steps__content 
-                      .steps__sub Первым делом мы...
-                      .steps__title Обсуждаем образец и принимаем заказ
-                      .steps__text На данном этапе наш менеджер связывается с вами, чтобы обсудить все детали производства
-                      .steps__controll 
-                        .steps__button.steps__button--prev.swiper-button-prev 
-                          svg(class="icon-arrow-right")
-                            use(xlink:href="img/sprite.svg#arrow-right")
-                          span назад
-                        .steps__button.steps__button--next.swiper-button-next 
-                          span далее
-                          svg(class="icon-arrow-right")
-                            use(xlink:href="img/sprite.svg#arrow-right")
-                    .steps__images 
-                      .steps__img 
-                        img(src="img/steps/img1.jpg", alt="")
-                      .steps__img 
-                        img(src="img/steps/img2.jpg", alt="")
+                    .steps__sub.d-block.d-lg-none Первым делом мы...
+                    .steps__title.d-block.d-lg-none Обсуждаем образец и принимаем заказ
+                    .steps__flex 
+                      .steps__content 
+                        .steps__sub.d-none.d-lg-block Первым делом мы...
+                        .steps__title.d-none.d-lg-block Обсуждаем образец и принимаем заказ
+                        .steps__text На данном этапе наш менеджер связывается с вами, чтобы обсудить все детали производства
+                        .steps__controll 
+                          .steps__button.steps__button--prev.swiper-button-prev 
+                            svg(class="icon-arrow-right")
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                            span назад
+                          .steps__fractions.swiper-pagination
+                            .steps__fractions-current 
+                            | /
+                            .steps__fractions-total 
+                          .steps__button.steps__button--next.swiper-button-next 
+                            span далее
+                            svg(class="icon-arrow-right")
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .steps__images 
+                        .steps__img 
+                          img(src="img/steps/img1.jpg", alt="")
+                        .steps__img 
+                          img(src="img/steps/img2.jpg", alt="")
                 .swiper-slide 
                   .steps__item 
-                    .steps__content 
-                      .steps__sub Первым делом мы...
-                      .steps__title Обсуждаем образец
-                      .steps__text На данном этапе наш менеджер связывается с вами, чтобы обсудить все детали производства, чтобы обсудить все детали производства
-                      .steps__controll 
-                        .steps__button.steps__button--prev.swiper-button-prev 
-                          svg(class="icon-arrow-right")
-                            use(xlink:href="img/sprite.svg#arrow-right")
-                          span назад
-                        .steps__button.steps__button--next.swiper-button-next 
-                          span далее
-                          svg(class="icon-arrow-right")
-                            use(xlink:href="img/sprite.svg#arrow-right")
-                    .steps__images 
-                      .steps__img 
-                        img(src="img/steps/img2.jpg", alt="")
-                      .steps__img 
-                        img(src="img/steps/img1.jpg", alt="")
+                    .steps__sub.d-block.d-lg-none Затем...
+                    .steps__title.d-block.d-lg-none Обсуждаем образец
+                    .steps__flex 
+                      .steps__content 
+                        .steps__sub.d-none.d-lg-block Затем...
+                        .steps__title.d-none.d-lg-block Обсуждаем образец
+                        .steps__text На данном этапе наш менеджер связывается с вами, чтобы обсудить все детали производства, чтобы обсудить все детали производства
+                        .steps__controll 
+                          .steps__button.steps__button--prev.swiper-button-prev 
+                            svg(class="icon-arrow-right")
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                            span назад
+                          .steps__fractions.swiper-pagination
+                            .steps__fractions-current 
+                            | /
+                            .steps__fractions-total 
+                          .steps__button.steps__button--next.swiper-button-next 
+                            span далее
+                            svg(class="icon-arrow-right")
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .steps__images 
+                        .steps__img 
+                          img(src="img/steps/img2.jpg", alt="")
+                        .steps__img 
+                          img(src="img/steps/img1.jpg", alt="")
               .steps__pagination-wrap 
                 .steps__pagination-num 01
                 .steps__pagination.swiper-pagination

@@ -32,11 +32,30 @@ window.onload = function () {
         progressbarOpposite: true,
       },
     });
+    // Вывод общего колличества слайдов в прогрессбар
     if (stepsSlider.slides.length < 10) {
       $('.steps__pagination-num--all').text('0' + stepsSlider.slides.length);
-    }else {
+    } else {
       $('.steps__pagination-num--all').text(stepsSlider.slides.length);
     }
+    // Вывод общего колличества слайдов в прогрессфракцию
+    if (stepsSlider.slides.length < 10) {
+      $('.steps__fractions-total').text('0' + stepsSlider.slides.length);
+    } else {
+      $('.steps__fractions-total').text(stepsSlider.slides.length);
+    }
+    // Вывод текущего слайда в прогрессфракцию
+    function appendNumCurrent() {
+      if (stepsSlider.slides.length < 10) {
+        $('.steps__fractions-current').text('0' + (stepsSlider.activeIndex + 1));
+      } else {
+        $('.steps__fractions-current').text(stepsSlider.activeIndex);
+      }
+    };
+    appendNumCurrent();
+    stepsSlider.on('activeIndexChange', function () {
+      appendNumCurrent();
+    });
   }
 
   // // Air Datepicker | Календарь
