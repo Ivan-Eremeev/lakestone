@@ -32,15 +32,15 @@
     &:before {
         content: '';
         display: block;
-        width: 15px;
-        height: 15px;
+        width: 25px;
+        height: 25px;
         border-radius: 100%;
         border: 1px solid $blackText;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        animation: pulsation 3s linear 1.5s infinite;
+        animation: pulsation 3s linear 0.7s infinite;
       }
     &:after {
       content: '';
