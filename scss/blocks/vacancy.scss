@@ -1,0 +1,90 @@
+/* vacancy */
+.vacancy { 
+  padding-top: 90px;
+  padding-bottom: 135px;
+  &__title {
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 110.69%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 35px;
+  }
+  &__items {
+    
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 35px 45px;
+    color: $blackText;
+    background-color: $grayBg;
+    &:hover {
+      background-color: #EFEFEF;
+    }
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 35px;
+    color: #2D2D2D;
+    line-height: 139.9%;
+    margin-bottom: 15px;
+  }
+  &__accent {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 139.9%;
+    margin-bottom: 5px;
+  }
+  &__text {
+    font-weight: 400;
+    line-height: 140.9%;
+    color: $grayText;
+    margin-bottom: 20px;
+  }
+  &__price {
+    font-weight: 700;
+    line-height: 140.9%;
+    color: $grayText;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    
+  }
+  @include media-breakpoint-down(lg) {
+    padding-top: 40px;
+    padding-bottom: 85px;
+    &__title {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    &__item {
+      padding: 25px 25px 40px;
+    }
+    &__subtitle {
+      font-size: 27px;
+      margin-bottom: 5px;  
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__title {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &__btn {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+/* /vacancy */
