@@ -1,0 +1,96 @@
+extends core/base.pug
+
+block title 
+  title Контакты
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs.d-block.d-md-none
+        .container 
+          ul
+            li 
+              a(href="#") Главная
+            li 
+              span Контакты
+      // /breadcrumbs
+
+      // contact
+      .contact
+        .container 
+
+          .contact__title контакты
+
+          .contact__address
+            .row 
+              .col-lg-6 
+                .contact__item 
+                  .contact__head 
+                    .contact__subtitle Офис в Москве
+                    .contact__time Пн-Пт 10:00-19:00
+                  ul.contact__list 
+                    li 
+                      a(href="#").contact__link 
+                        .contact__icon 
+                          svg(class="icon-mark")
+                            use(xlink:href="img/sprite.svg#mark")
+                        .contact__name Адрес: 
+                        .contact__value г. Москва, Название Улицы, строение
+                    li 
+                      a(href="#").contact__link 
+                        .contact__icon 
+                          svg(class="icon-tel")
+                            use(xlink:href="img/sprite.svg#tel")
+                        .contact__name Телефон: 
+                        .contact__value +7-888-999-77-77 
+                    li 
+                      a(href="#").contact__link 
+                        .contact__icon 
+                          svg(class="icon-mail")
+                            use(xlink:href="img/sprite.svg#mail")
+                        .contact__name Почта: 
+                        .contact__value lakestonegroup@yandex.ru
+              .col-lg-6 
+                .contact__item 
+                  .contact__head 
+                    .contact__subtitle Производство в Курске
+                    .contact__time Пн-Пт 10:00-19:00
+                  ul.contact__list 
+                    li 
+                      a(href="#").contact__link 
+                        .contact__icon 
+                          svg(class="icon-mark")
+                            use(xlink:href="img/sprite.svg#mark")
+                        .contact__name Адрес: 
+                        .contact__value г. Курск, Название Улицы, строение
+                    li 
+                      a(href="#").contact__link 
+                        .contact__icon 
+                          svg(class="icon-tel")
+                            use(xlink:href="img/sprite.svg#tel")
+                        .contact__name Телефон: 
+                        .contact__value +7-888-999-77-77 
+                    li 
+                      a(href="#").contact__link 
+                        .contact__icon 
+                          svg(class="icon-mail")
+                            use(xlink:href="img/sprite.svg#mail")
+                        .contact__name Почта: 
+                        .contact__value lakestonegroup@yandex.ru
+
+          .contact__mapblock 
+            .contact__mapblock-links 
+              .contact__mapblock-link.contact__mapblock-link--office.active(data-place="[55.75399399999374, 37.62209300000001]") Офис
+              .contact__mapblock-link.contact__mapblock-link--factory(data-place="[51.727245371240414, 36.1819885]") Производство
+            .contact__mapblock-map#map
+
+            #mapMenu
+      // /contact
+
+    include core/footer.pug

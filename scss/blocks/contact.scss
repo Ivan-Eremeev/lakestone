@@ -1,0 +1,114 @@
+/* contact */
+.contact { 
+  padding-top: 90px;
+  padding-bottom: 135px;
+  &__title {
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 110.69%;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  &__address {
+    margin-bottom: 50px;
+    > .row {
+      margin-left: -60px;
+      margin-right: -60px;
+      margin-top: -32px;
+      & > * {
+        padding-top: 32px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
+  }
+  &__item {
+    
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $blackText;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__time {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 146%;
+    color: $grayText;
+  }
+  &__list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    li {
+      margin: 10px 0;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $grayText;
+    &:hover {
+      .contact__icon {
+        border: 1px solid $grayText;
+      }
+    }
+  }
+  &__name {
+    min-width: 70px;
+    margin-right: 10px;
+  }
+  &__value {
+    font-weight: 500;
+    color: $blackText;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+    border-radius: 100%;
+    border: 1px solid #DEDEDE;
+    fill: $blackText;
+    transition: .3s;
+    svg {
+      max-width: 18px;
+      max-height: 18px;
+    }
+  }
+  &__mapblock {
+    
+  }
+  &__mapblock-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  &__mapblock-link {
+    padding: 12px 24px;
+    margin-right: 8px;
+    white-space: nowrap;
+    border-radius: 9px;
+    background-color: $grayBg;
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+    &.active, &:hover {
+      background-color: #E3E3E3;
+    }
+  }
+  &__mapblock-map {
+    height: 574px;
+  }
+}
+/* /contact */
