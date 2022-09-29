@@ -90,7 +90,7 @@ window.onload = function () {
           let place = currentItem.data('place');
           btn.removeClass('active');
           currentItem.addClass('active');
-          myMap.panTo(place, { flying: 1 });
+          myMap.panTo(place, { flying: true });
         } else {
           return false;
         }
