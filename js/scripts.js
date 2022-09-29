@@ -58,6 +58,29 @@ window.onload = function () {
     });
   }
 
+  if ($('#productSlider').length) {
+    const productSliderThumbs = new Swiper('#productSliderThumbs', {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      freeMode: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        992: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 7,
+        }
+      }
+    });
+    const productSlider = new Swiper('#productSlider', {
+      slidesPerView: 1,
+      thumbs: {
+        swiper: productSliderThumbs,
+      },
+    });
+  }
+
   // YandexMap
   if ($('#map').length) {
     let defoltPlace = $('.contact__mapblock-link.active').data('place');

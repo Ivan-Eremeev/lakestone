@@ -1,0 +1,117 @@
+extends core/base.pug
+
+block title 
+  title Страница товара
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul
+            li 
+              a(href="#") Продукция
+            li 
+              a(href="#") Женские сумки
+            li 
+              span Название сумки
+      // /breadcrumbs
+
+      // product
+      .product
+        .container 
+          .product__container 
+
+            .product__title.d-block.d-md-none Женская кожаная сумка Davey Blue
+        
+            .product__slider 
+              #productSlider 
+                .swiper-wrapper 
+                  .swiper-slide 
+                    img(src="img/product/img1.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img2.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img3.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img4.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img1.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img2.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img3.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img4.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img1.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img2.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img3.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img4.jpg", alt="")
+
+              #productSliderThumbs 
+                .swiper-wrapper 
+                  .swiper-slide 
+                    img(src="img/product/img1.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img2.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img3.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img4.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img1.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img2.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img3.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img4.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img1.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img2.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img3.jpg", alt="")
+                  .swiper-slide 
+                    img(src="img/product/img4.jpg", alt="")
+
+            .product__content 
+
+              .product__title.d-md-block.d-none Женская кожаная сумка Davey Blue
+
+              .product__lists 
+                ul.product__list
+                  li Цвет: 
+                    span Голубой 
+                  li Внешние размеры, см: 
+                    span 27х20х14 
+                  li Внутренние размеры, см: 
+                    span 24х17х13 
+                  li Материал: 
+                    span 100% натуральная кожа 
+                    
+                ul.product__list
+                  li Цвет: 
+                    span Голубой 
+                  li Внешние размеры, см: 
+                    span 27х20х14 
+                  li Внутренние размеры, см: 
+                    span 24х17х13 
+                  li Материал: 
+                    span 100% натуральная кожа 
+
+              .product__btn 
+                .btn узнать оптовую цену
+      // /product
+
+    include core/footer.pug

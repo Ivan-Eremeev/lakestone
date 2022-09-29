@@ -1,0 +1,124 @@
+/* product */
+.product { 
+  padding-top: 70px;
+  padding-bottom: 60px;
+  &__container {
+    display: flex;
+  }
+  &__slider {
+    width: 624px;
+    flex-shrink: 0;
+    margin-right: 76px;
+    overflow: hidden;
+    #productSlider {
+      margin-bottom: 20px;
+    }
+    #productSliderThumbs {
+      .swiper-slide {
+        border: 1px solid transparent;
+        opacity: 0.8;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+          opacity: 1;
+        }
+        img {
+          display: block;
+          height: 70px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .swiper-slide-thumb-active {
+        border-color: #BABABA;
+        opacity: 1;
+      }
+    }
+  }
+  &__content {
+    flex-grow: 1;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 110.69%;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__list {
+    font-size: 16px;
+    line-height: 84.18%;
+    &:nth-child(1) {
+      margin-right: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+      color: $grayText;
+      span {
+        color: $blackText;
+      }
+    }
+  }
+  &__btn {
+    
+  }
+  @include media-breakpoint-down(xxl) {
+    &__slider {
+      width: 500px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__slider {
+      width: 400px;
+    }
+    &__lists {
+      flex-wrap: wrap;
+    }
+    &__list {
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 50px 0;
+    &__slider {
+      width: 360px;
+      margin-right: 35px;
+      #productSlider {
+        margin-bottom: 10px;
+      }
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 20px 0 70px;
+    overflow: hidden;
+    &__container {
+      flex-wrap: wrap;  
+    }
+    &__slider {
+      width: 100%;
+      margin-bottom: 35px;
+      #productSlider {
+        margin-left: -25px;
+        margin-right: -25px;
+      }
+    }
+    &__lists {
+      margin-bottom: 35px;
+    }
+    &__btn {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+/* /product */
