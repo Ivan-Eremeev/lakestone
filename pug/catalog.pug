@@ -1,0 +1,186 @@
+extends core/base.pug
+
+block title 
+  title Каталог
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs.d-block.d-md-none
+        .container 
+          ul
+            li 
+              a(href="#") Главная
+            li 
+              span Продукция
+      // /breadcrumbs
+
+      // catalog
+      .catalog
+        .container 
+
+          .catalog__title продукция
+          
+          form(action="#").catalog__filter 
+            .catalog__filter-item 
+              input#catalogFilter_0(type="radio", name="catalogFilter" checked)
+              label(for="catalogFilter_0") Женские сумки
+            .catalog__filter-item 
+              input#catalogFilter_1(type="radio", name="catalogFilter")
+              label(for="catalogFilter_1") Мужские сумки
+            .catalog__filter-item 
+              input#catalogFilter_2(type="radio", name="catalogFilter")
+              label(for="catalogFilter_2") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_3(type="radio", name="catalogFilter")
+              label(for="catalogFilter_3") Мужские сумки
+            .catalog__filter-item 
+              input#catalogFilter_4(type="radio", name="catalogFilter")
+              label(for="catalogFilter_4") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_5(type="radio", name="catalogFilter")
+              label(for="catalogFilter_5") Мужские сумки
+            .catalog__filter-item 
+              input#catalogFilter_6(type="radio", name="catalogFilter")
+              label(for="catalogFilter_6") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_7(type="radio", name="catalogFilter")
+              label(for="catalogFilter_7") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_8(type="radio", name="catalogFilter")
+              label(for="catalogFilter_8") Женские сумки
+            .catalog__filter-item 
+              input#catalogFilter_9(type="radio", name="catalogFilter")
+              label(for="catalogFilter_9") Мужские сумки
+            .catalog__filter-item 
+              input#catalogFilter_10(type="radio", name="catalogFilter")
+              label(for="catalogFilter_10") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_11(type="radio", name="catalogFilter")
+              label(for="catalogFilter_11") Мужские сумки
+            .catalog__filter-item 
+              input#catalogFilter_12(type="radio", name="catalogFilter")
+              label(for="catalogFilter_12") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_13(type="radio", name="catalogFilter")
+              label(for="catalogFilter_13") Мужские сумки
+            .catalog__filter-item 
+              input#catalogFilter_14(type="radio", name="catalogFilter")
+              label(for="catalogFilter_14") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_15(type="radio", name="catalogFilter")
+              label(for="catalogFilter_15") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_16(type="radio", name="catalogFilter")
+              label(for="catalogFilter_16") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_17(type="radio", name="catalogFilter")
+              label(for="catalogFilter_17") Мужские сумки
+            .catalog__filter-item 
+              input#catalogFilter_18(type="radio", name="catalogFilter")
+              label(for="catalogFilter_18") Рюкзаки
+            .catalog__filter-item 
+              input#catalogFilter_19(type="radio", name="catalogFilter")
+              label(for="catalogFilter_19") Рюкзаки
+
+          .catalog__select 
+            select#filterSelect(name="filterSelect") 
+              option(value="#") Женские сумки
+              option(value="#") Мужские сумки
+              option(value="#") Рюкзаки
+              option(value="#") Женские сумки
+              option(value="#") Мужские сумки
+              option(value="#") Рюкзаки
+            svg(class="icon-arrow-down")
+              use(xlink:href="img/sprite.svg#arrow-down")
+
+          .catalog__head 
+            .catalog__subtitle Женские сумки
+            .catalog__count Товаров: 35
+
+
+          .catalog__items 
+            .row 
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img1.jpg", alt="")
+                    img(src="img/products/img4.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img2.jpg", alt="")
+                    img(src="img/products/img4.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img3.jpg", alt="")
+                    img(src="img/products/img1.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img4.jpg", alt="")
+                    img(src="img/products/img2.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img1.jpg", alt="")
+                    img(src="img/products/img4.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img2.jpg", alt="")
+                    img(src="img/products/img4.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img3.jpg", alt="")
+                    img(src="img/products/img1.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img4.jpg", alt="")
+                    img(src="img/products/img2.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img1.jpg", alt="")
+                    img(src="img/products/img4.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img2.jpg", alt="")
+                    img(src="img/products/img4.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img3.jpg", alt="")
+                    img(src="img/products/img1.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+              .col-lg-3.col-md-4.col-6 
+                a(href="#").catalog__item 
+                  .catalog__img
+                    img(src="img/products/img4.jpg", alt="")
+                    img(src="img/products/img2.jpg", alt="")
+                  .catalog__text Женская кожаная сумка Davey Blue
+          .catalog__btn 
+            a(href="#") Загрузить еще
+      // /catalog
+
+    include core/footer.pug
