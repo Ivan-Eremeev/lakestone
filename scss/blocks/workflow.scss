@@ -10,6 +10,7 @@
     text-align: center;
   }
   &__slider {
+    position: relative;
     .swiper-slide-active {
       .workflow__text {
         padding-right: 40px;
@@ -27,6 +28,38 @@
       .workflow__img {
         opacity: 1;
       }
+    }
+  }
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    margin-top: 0;
+    background-color: #fff;
+    top: 435px;
+    fill: #000;
+    transition: .3s;
+    svg {
+      width: 20px;
+      height: 12px;
+    }
+    &:after {
+      display: none;
+    }
+    &--prev {
+      left: 0;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    &--next {
+      right: 0;
+    }
+    &:hover {
+      background-color: #000;
+      fill: #fff;
     }
   }
   &__item {
@@ -61,6 +94,9 @@
     &__text {
       font-size: 14px;
     }
+    &__arrow {
+      top: 191px;
+    }
   }
   @include media-breakpoint-down(md) {
     padding: 40px 0 20px;
@@ -86,6 +122,11 @@
           padding-left: 0;
         }
       }
+    }
+    &__arrow {
+      width: 50px;
+      height: 50px;
+      top: 184px;
     }
   }
 }

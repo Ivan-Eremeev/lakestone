@@ -8327,6 +8327,9 @@ body.lock {
   margin-bottom: 45px;
   text-align: center;
 }
+.workflow__slider {
+  position: relative;
+}
 .workflow__slider .swiper-slide-active .workflow__text {
   padding-right: 40px;
 }
@@ -8338,6 +8341,48 @@ body.lock {
 }
 .workflow__slider .swiper-slide-visible .workflow__img {
   opacity: 1;
+}
+.workflow__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  margin-top: 0;
+  background-color: #fff;
+  top: 435px;
+  fill: #000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.workflow__arrow svg {
+  width: 20px;
+  height: 12px;
+}
+.workflow__arrow:after {
+  display: none;
+}
+.workflow__arrow--prev {
+  left: 0;
+}
+.workflow__arrow--prev svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.workflow__arrow--next {
+  right: 0;
+}
+.workflow__arrow:hover {
+  background-color: #000;
+  fill: #fff;
 }
 .workflow__img {
   height: 500px;
@@ -8371,6 +8416,9 @@ body.lock {
   .workflow__text {
     font-size: 14px;
   }
+  .workflow__arrow {
+    top: 191px;
+  }
 }
 @media (max-width: 767.98px) {
   .workflow {
@@ -8392,6 +8440,11 @@ body.lock {
   }
   .workflow__slider .swiper-slide-next .workflow__text {
     padding-left: 0;
+  }
+  .workflow__arrow {
+    width: 50px;
+    height: 50px;
+    top: 184px;
   }
 }
 

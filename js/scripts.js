@@ -91,6 +91,10 @@ window.onload = function () {
       watchSlidesProgress: true,
       loopAdditionalSlides: 3,
       grabCursor: true,
+      navigation: {
+        nextEl: '.workflow__arrow--next',
+        prevEl: '.workflow__arrow--prev',
+      },
       breakpoints: {
         768: {
           slidesPerView: 2,
