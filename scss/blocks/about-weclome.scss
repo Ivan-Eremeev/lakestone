@@ -1,0 +1,116 @@
+/* about-weclome */
+.about-weclome { 
+  padding: 90px 0 75px;
+  &__title {
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 110.69%;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  &__video {
+    margin-bottom: 105px;
+    background-color: $grayBg;
+    background-size: 100% auto;
+    background-position: center;
+    position: relative;
+    user-select: none;
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 56.25%;
+    }
+    .video__play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      cursor: pointer;
+      user-select: none;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  &__video-prev {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__subtitle {
+    max-width: 680px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 105.69%;
+  }
+  &__text {
+    max-width: 610px;
+    font-size: 18px;
+    line-height: 145.5%;
+  }
+  @include media-breakpoint-down(xl) {
+    &__subtitle {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0 15px;
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__video {
+      margin-bottom: 45px;
+    }
+    &__subtitle {
+      max-width: 320px;
+    }
+    &__text {
+      max-width: 360px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 20px 0 20px;
+    overflow: hidden;
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__subtitle {
+      max-width: none;
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      max-width: none;
+    }
+    &__video {
+      margin-left: -25px;
+      margin-right: -25px;
+      margin-bottom: 25px;
+    }
+  }
+}
+/* /about-weclome */
