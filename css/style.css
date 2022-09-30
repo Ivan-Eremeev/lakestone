@@ -8449,6 +8449,47 @@ body.lock {
 }
 
 /* /workflow */
+/* slogan */
+.slogan {
+  padding: 50px 0 135px;
+}
+.slogan__title {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 105.69%;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.slogan__btn {
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .slogan {
+    padding: 40px 0 85px;
+  }
+  .slogan__title {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .slogan {
+    padding: 15px 0 70px;
+  }
+  .slogan__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575.98px) {
+  .slogan__btn .btn {
+    width: 100%;
+  }
+}
+
+/* /slogan */
 /* footer */
 .footer {
   padding: 20px 0;

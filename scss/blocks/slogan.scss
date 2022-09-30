@@ -1,0 +1,41 @@
+/* slogan */
+.slogan { 
+  padding: 50px 0 135px;
+  &__title {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 105.69%;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__btn {
+    text-align: center;
+    .btn {
+
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0 85px;
+    &__title {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 15px 0 70px;
+    &__title {
+      font-size: 28px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__btn {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+/* /slogan */
