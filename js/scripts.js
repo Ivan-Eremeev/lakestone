@@ -17,7 +17,7 @@ window.onload = function () {
   };
   stikyMenu($('#headerSticky'));
 
-  // Swiper | Слайдер
+  // Swiper | Слайдер на главной
   if ($('#stepsSlider').length) {
     const stepsSlider = new Swiper('#stepsSlider', {
       slidesPerView: 1,
@@ -58,6 +58,7 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Слайдер на странице товара
   if ($('#productSlider').length) {
     const productSliderThumbs = new Swiper('#productSliderThumbs', {
       slidesPerView: 4,
@@ -78,6 +79,23 @@ window.onload = function () {
       thumbs: {
         swiper: productSliderThumbs,
       },
+    });
+  }
+
+  // Swiper | Слайдер на странице о производстве
+  if ($('#workflowSlider').length) {
+    const workflowSlider = new Swiper('#workflowSlider', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      watchSlidesProgress: true,
+      loopAdditionalSlides: 3,
+      grabCursor: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+      }
     });
   }
 

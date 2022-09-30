@@ -8239,8 +8239,8 @@ body.lock {
 }
 @media (max-width: 991.98px) {
   .about-items {
+    padding: 10px 0 0;
     overflow: hidden;
-    padding: 10px 0 60px;
   }
   .about-items:after {
     display: none;
@@ -8271,6 +8271,7 @@ body.lock {
     order: 1;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    margin-bottom: 0;
   }
   .about-items__item--strange .about-items__content {
     margin-left: -25px;
@@ -8304,6 +8305,7 @@ body.lock {
   }
   .about-items__item--strange .about-items__img {
     width: auto;
+    margin-bottom: 20px;
   }
   .about-items__item--strange .about-items__content {
     margin-left: 0;
@@ -8313,6 +8315,87 @@ body.lock {
 }
 
 /* /about-items */
+/* workflow */
+.workflow {
+  padding: 110px 0 45px;
+  overflow: hidden;
+}
+.workflow__title {
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 105.69%;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.workflow__slider .swiper-slide-active .workflow__text {
+  padding-right: 40px;
+}
+.workflow__slider .swiper-slide-next .workflow__text {
+  padding-left: 40px;
+}
+.workflow__slider .swiper-slide-visible .workflow__text {
+  opacity: 1;
+}
+.workflow__slider .swiper-slide-visible .workflow__img {
+  opacity: 1;
+}
+.workflow__img {
+  height: 500px;
+  margin-bottom: 80px;
+  opacity: 0.5;
+}
+.workflow__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.workflow__text {
+  font-size: 18px;
+  line-height: 145.5%;
+  color: #585858;
+  opacity: 0;
+}
+@media (max-width: 991.98px) {
+  .workflow {
+    padding: 60px 0 25px;
+  }
+  .workflow__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .workflow__img {
+    height: 256px;
+    margin-bottom: 40px;
+  }
+  .workflow__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  .workflow {
+    padding: 40px 0 20px;
+  }
+  .workflow__title {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  .workflow__img {
+    height: 234px;
+    margin-bottom: 25px;
+  }
+  .workflow__text {
+    font-size: 16px;
+  }
+  .workflow__slider .swiper-slide-active .workflow__text {
+    padding-right: 0;
+  }
+  .workflow__slider .swiper-slide-next .workflow__text {
+    padding-left: 0;
+  }
+}
+
+/* /workflow */
 /* footer */
 .footer {
   padding: 20px 0;
