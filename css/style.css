@@ -6537,6 +6537,19 @@ body.lock {
   width: 14px;
   height: 8px;
 }
+.welcome__video {
+  position: relative;
+}
+.welcome__video video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .welcome__video:after {
   content: "";
   display: block;

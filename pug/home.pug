@@ -25,7 +25,10 @@ block content
                 .welcome__link-arrow 
                   svg(class="icon-arrow-right")
                     use(xlink:href="img/sprite.svg#arrow-right")
-        .welcome__video(data-vide-bg="mp4: video/lakestone-welcome.mp4, webm: video/lakestone-welcome.webm, ogv: video/lakestone-welcome.ogv")
+        //- .welcome__video(data-vide-bg="mp4: video/lakestone-welcome.mp4, webm: video/lakestone-welcome.webm, ogv: video/lakestone-welcome.ogv")
+        .welcome__video
+          video(autoplay muted loop)
+            source(src="video/lakestone-welcome.mp4")
       // /welcome
 
       // category-block
