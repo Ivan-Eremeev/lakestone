@@ -163,7 +163,9 @@ window.onload = function () {
 
   // Magnific Popup | Попап окна
   $('.js-popup-link').magnificPopup({
-    mainClass: 'mfp-fade'
+    mainClass: 'mfp-fade',
+    type: 'inline',
+    midClick: true
   });
 
   // Inputmask | Маски для полей ввода
