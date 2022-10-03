@@ -61,5 +61,18 @@
   &:before {
     transform: translate(-50%,-50%) rotate(-45deg);
   }
+  @include media-breakpoint-down(lg) {
+    top: -80px;
+    right: 50%;
+    transform: translate(0,50%);
+  }
+}
+.mfp-container {
+  padding: 0;
+}
+.mfp-content {
+  @include media-breakpoint-down(lg) {
+    vertical-align: bottom;
+  }
 }
 /* /popup */

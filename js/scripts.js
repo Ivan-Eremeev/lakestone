@@ -157,7 +157,7 @@ window.onload = function () {
           let place = currentItem.data('place');
           btn.removeClass('active');
           currentItem.addClass('active');
-          myMap.panTo(place, { flying: true });
+          myMap.setCenter(place);
         } else {
           return false;
         }

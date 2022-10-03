@@ -6121,6 +6121,25 @@ body.lock {
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+@media (max-width: 991.98px) {
+  .mfp-close-btn-in .mfp-close {
+    top: -80px;
+    right: 50%;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+  }
+}
+
+.mfp-container {
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  .mfp-content {
+    vertical-align: bottom;
+  }
+}
 
 /* /popup */
 /* header */
@@ -7615,6 +7634,15 @@ body.lock {
   line-height: 140.9%;
   color: #585858;
   margin-bottom: 30px;
+}
+.vacancy__btn .btn {
+  background-color: #F4F4F4;
+}
+.vacancy__btn .btn:hover {
+  background-color: #000;
+}
+.vacancy__btn .btn:focus {
+  background-color: #464646;
 }
 @media (max-width: 991.98px) {
   .vacancy {
