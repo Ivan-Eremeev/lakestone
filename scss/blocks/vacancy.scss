@@ -51,13 +51,7 @@
   }
   &__btn {
     .btn {
-      background-color: $grayBg;
-      &:hover {
-        background-color: #000;
-      }
-      &:focus {
-        background-color: #464646;
-      }
+      
     }
   }
   @include media-breakpoint-down(lg) {
