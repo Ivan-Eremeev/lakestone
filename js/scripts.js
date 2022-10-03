@@ -125,46 +125,6 @@ window.onload = function () {
     });
   }
 
-  // YandexMap
-  if ($('#map').length) {
-    let defoltPlace = $('.contact__mapblock-link.active').data('place');
-    let btn = $('.contact__mapblock-link');
-    ymaps.ready(init);
-    function init() {
-      const myMap = new ymaps.Map('map', {
-        center: defoltPlace,
-        zoom: 15,
-        controls: [
-          'zoomControl',
-        ]
-      });
-      // Добавление меток со своим изображением
-      btn.each(function () {
-        let currentPlace = $(this).data('place');
-        let mark = new ymaps.Placemark(currentPlace, null, {
-          iconLayout: 'default#image',
-          iconImageHref: 'img/placemark.svg',
-          iconImageSize: [41, 50],
-          iconImageOffset: [-20, -25]
-        });
-        myMap.geoObjects
-          .add(mark);
-      });
-      // Обработка клика по кнопке
-      btn.on('click', function () {
-        let currentItem = $(this);
-        if (!currentItem.hasClass('active')) {
-          let place = currentItem.data('place');
-          btn.removeClass('active');
-          currentItem.addClass('active');
-          myMap.setCenter(place);
-        } else {
-          return false;
-        }
-      });
-    }
-  }
-
   // Видео youtube для страницы
   function uploadYoutubeVideo() {
     if ($(".js-youtube")) {
@@ -218,6 +178,46 @@ window.onload = function () {
       alias: 'email',
       showMaskOnHover: false,
     })
+  }
+
+  // YandexMap
+  if ($('#map').length) {
+    let defoltPlace = $('.contact__mapblock-link.active').data('place');
+    let btn = $('.contact__mapblock-link');
+    ymaps.ready(init);
+    function init() {
+      const myMap = new ymaps.Map('map', {
+        center: defoltPlace,
+        zoom: 15,
+        controls: [
+          'zoomControl',
+        ]
+      });
+      // Добавление меток со своим изображением
+      btn.each(function () {
+        let currentPlace = $(this).data('place');
+        let mark = new ymaps.Placemark(currentPlace, null, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/placemark.svg',
+          iconImageSize: [41, 50],
+          iconImageOffset: [-20, -25]
+        });
+        myMap.geoObjects
+          .add(mark);
+      });
+      // Обработка клика по кнопке
+      btn.on('click', function () {
+        let currentItem = $(this);
+        if (!currentItem.hasClass('active')) {
+          let place = currentItem.data('place');
+          btn.removeClass('active');
+          currentItem.addClass('active');
+          myMap.setCenter(place);
+        } else {
+          return false;
+        }
+      });
+    }
   }
 
   // coverVid | Фоновое видео
