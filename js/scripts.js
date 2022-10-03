@@ -17,6 +17,28 @@ window.onload = function () {
   };
   stikyMenu($('#headerSticky'));
 
+  // Мобильное меню
+  function menu(btn) {
+    let $this = undefined,
+        drop = undefined,
+        close = $('.js-menu-close'),
+        body = $('body');
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $this = $(this);
+      drop = $('#' + $this.data('menu'));
+      $this.toggleClass('active');
+      drop.toggleClass('open');
+      body.toggleClass('lock');
+    })
+    close.on('click', function () {
+      $('[data-menu="' + $(this).data('menu') + '"]').removeClass('active');
+      $('#' + $(this).data('drop')).removeClass('open');
+      body.removeClass('lock');
+    })
+  }
+  menu($('.js-menu-btn'));
+
   // Swiper | Слайдер на главной
   if ($('#stepsSlider').length) {
     const stepsSlider = new Swiper('#stepsSlider', {

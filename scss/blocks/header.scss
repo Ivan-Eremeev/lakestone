@@ -43,15 +43,20 @@
         padding: 25px 0;
         color: $grayText;
         white-space: nowrap;
-        &:hover {
-          color: $blackText;
-        }
-        &.active {
-          color: $blackText;
-          border-bottom: 1px solid #000;
+        @include media-breakpoint-up(md) {
+          &:hover {
+            color: $blackText;
+          }
+          &.active {
+            color: $blackText;
+            border-bottom: 1px solid #000;
+          }
         }
       }
     }
+  }
+  &__bottom {
+    display: none;
   }
   @include media-breakpoint-up(lg) {
     &__container {
@@ -88,11 +93,28 @@
     }
   }
   @include media-breakpoint-down(md) {
+    border: none;
+    overflow: hidden;
     &__container {
       .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+      }
+      > .container {
+        position: relative;
+        z-index: 10;
+        &:after {
+          content: '';
+          display: block;
+          left: -500px;
+          right: -500px;
+          height: 1px;
+          background-color: #D9D9D9;
+          position: absolute;
+          bottom: 0;
+          z-index: 2;
+        }
       }
     }
     &__hamburger {
@@ -159,10 +181,74 @@
       margin-right: 0;
     }
     &__menu {
+      width: 100%;
+      padding-top: 55px;
+      background-color: #fff;
       position: fixed;
       top: 0;
       bottom: 0;
       left: -800px;
+      z-index: 9;
+      transition: 0.3s;
+      overflow: hidden;
+      &.open {
+        left: 0;
+      }
+    }
+    &__list {
+      display: block;
+      width: 100%;
+      padding-top: 20px;
+      flex-grow: 1;
+      margin-left: 0;
+      overflow-y: auto;
+      li {
+        margin-left: 0;
+        a {
+          padding: 13px 0;
+          font-size: 30px;
+          line-height: 35px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          &.active {
+            color: $blackText;
+          }
+        }
+      }
+    }
+    &__bottom {
+      padding-top: 10px;
+      display: block;
+      width: 100%;
+    }
+    &__bottom-logo {
+      margin-bottom: 20px;
+    }
+    &__bottom-link {
+      font-size: 14px;
+      line-height: 145.5%;
+      margin-bottom: 20px;
+      a {
+        color: $blackText;
+        text-decoration: underline;
+      }
+    }
+    &__bottom-license {
+      padding: 15px 0 11px;
+      font-size: 12px;
+      line-height: 145.5%;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        left: -500px;
+        right: -500px;
+        height: 1px;
+        background-color: #D9D9D9;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+      }
     }
   }
 }

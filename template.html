@@ -19,14 +19,14 @@
 				<div class="container-fluid container-lg">
 					<div class="header__container">
 						<div class="container">
-							<div class="header__hamburger">
+							<div class="header__hamburger js-menu-btn" data-menu="mobileMenu">
 								<div class="header__hamburger-box">
 									<div class="header__hamburger-inner"></div>
 								</div>
 							</div><a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a>
 						</div>
-						<nav class="header__menu">
-							<div class="container">
+						<nav class="header__menu" id="mobileMenu">
+							<div class="container flex-column flex-md-row h-100">
 								<ul class="header__list"> 
 									<li> <a class="active" href="#">главная</a></li>
 									<li> <a href="#">О производстве</a></li>
@@ -34,6 +34,11 @@
 									<li> <a href="#">вакансии</a></li>
 									<li> <a href="#">контакты</a></li>
 								</ul>
+								<div class="header__bottom"> 
+									<div class="header__bottom-logo"> <img src="img/logo-small.svg" alt=""></div>
+									<div class="header__bottom-link"> <a href="#">Связаться с нами</a></div>
+									<div class="header__bottom-license">&copy; Lakestone 2012 — 2022</div>
+								</div>
 							</div>
 						</nav>
 					</div>

@@ -3,13 +3,13 @@ header#headerSticky.header
   .container-fluid.container-lg
     .header__container
       .container
-        .header__hamburger
+        .header__hamburger.js-menu-btn(data-menu="mobileMenu")
           .header__hamburger-box
             .header__hamburger-inner
         a(href="#").header__logo
           img(src="img/logo.svg", alt="")
-      nav.header__menu
-        .container
+      nav.header__menu#mobileMenu
+        .container.flex-column.flex-md-row.h-100
           ul.header__list 
             li 
               a(href="#").active главная
@@ -21,4 +21,10 @@ header#headerSticky.header
               a(href="#") вакансии
             li 
               a(href="#") контакты
+          .header__bottom 
+            .header__bottom-logo 
+              img(src="img/logo-small.svg", alt="")
+            .header__bottom-link 
+              a(href="#") Связаться с нами
+            .header__bottom-license &copy; Lakestone 2012 — 2022
 //	/header
