@@ -6537,8 +6537,10 @@ body.lock {
   width: 14px;
   height: 8px;
 }
-.welcome__video {
-  height: 690px;
+.welcome__video:after {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
 }
 @media (max-width: 1499.98px) {
   .welcome__title {
@@ -6573,9 +6575,6 @@ body.lock {
   .welcome__title {
     max-width: 370px;
   }
-  .welcome__video {
-    height: 477px;
-  }
 }
 @media (max-width: 767.98px) {
   .welcome {
@@ -6589,9 +6588,6 @@ body.lock {
   }
   .welcome__links {
     display: none;
-  }
-  .welcome__video {
-    height: 211px;
   }
 }
 

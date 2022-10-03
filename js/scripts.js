@@ -220,6 +220,9 @@ window.onload = function () {
     })
   }
 
+  // coverVid | Фоновое видео
+  // $('.covervid-video').coverVid();
+
   // // Табы
 	// function tabs() {
   //   const tabs = $('.js-tabs');

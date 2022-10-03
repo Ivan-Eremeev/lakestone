@@ -55,7 +55,11 @@
     }
   }
   &__video {
-    height: 690px;
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 56.25%;
+    }
   }
   @include media-breakpoint-down(xxl) {
     &__title {
@@ -85,9 +89,9 @@
     &__title {
       max-width: 370px;
     }
-    &__video {
-      height: 477px;
-    }
+    // &__video {
+    //   height: 477px;
+    // }
   }
   @include media-breakpoint-down(md) {
     padding: 40px 0 15px;
@@ -100,9 +104,9 @@
     &__links {
       display: none;
     }
-    &__video {
-      height: 211px;
-    }
+    // &__video {
+    //   height: 211px;
+    // }
   }
 }
 /* /welcome */
