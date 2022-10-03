@@ -6033,10 +6033,6 @@ body.lock {
   background-color: #000;
   color: #fff;
 }
-.btn:focus {
-  background-color: #464646;
-  color: #fff;
-}
 
 /* /btn */
 /* popup */
