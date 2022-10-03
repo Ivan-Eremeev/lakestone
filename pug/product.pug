@@ -111,7 +111,27 @@ block content
                     span 100% натуральная кожа 
 
               .product__btn 
-                .btn узнать оптовую цену
+                a(href="#callbackPopup").js-popup-link.btn узнать оптовую цену
       // /product
+      
+      // callback-popup 
+      #callbackPopup.popup.mfp-hide
+        form(action="#").callback-popup 
+          .callback-popup__title Узнать оптовую цену
+          .callback-popup__text Оставьте свои контактные данные и наш менеджер свяжется с вами, чтобы обсудить детали сотрудничества.
+          .callback-popup__input 
+            input(type="text" name="name" maxlength="50" required)
+            .callback-popup__input-label Имя
+          .callback-popup__input 
+            input(type="text" name="email" inputmode="email" required)
+            .callback-popup__input-label E-mail
+          .callback-popup__input 
+            input(type="text" name="tel" inputmode="tel" required)
+            .callback-popup__input-label Телефон
+          .callback-popup__btn 
+            button(type="submit").btn Отправить
+          .callback-popup__ps Нажимая кнопку “Отправить”, Вы даёте согласие на обработку 
+            a(href="#") персональных данных
+      // /callback-popup
 
     include core/footer.pug

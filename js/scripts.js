@@ -179,15 +179,24 @@ window.onload = function () {
   };
   uploadYoutubeVideo();
 
-  // // Air Datepicker | Календарь
-  // new AirDatepicker('#airDatepicker', {
-  //   position: 'right top',
-  // });
+  // Magnific Popup | Попап окна
+  $('.js-popup-link').magnificPopup({
+    mainClass: 'mfp-fade'
+  });
 
-  // // Magnific Popup | Попап окна
-  // $('.open-popup-link').magnificPopup({
-  //   mainClass: 'mfp-fade'
-  // });
+  // Inputmask | Маски для полей ввода
+  if ($('input[name="tel"]').length) {
+    $('input[name="tel"]').inputmask({
+      mask: "+7-999-999-99-99",
+      showMaskOnHover: false,
+    })
+  }
+  if ($('input[name="email"]').length) {
+    $('input[name="email"]').inputmask({
+      alias: 'email',
+      showMaskOnHover: false,
+    })
+  }
 
   // // Табы
 	// function tabs() {
