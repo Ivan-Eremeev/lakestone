@@ -6711,7 +6711,7 @@ body.lock {
   margin-bottom: 46px;
 }
 .about-block__right-img {
-  max-width: 362px;
+  width: 362px;
   height: 354px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -6798,7 +6798,7 @@ body.lock {
     height: 434px;
   }
   .about-block__right-img {
-    max-width: 359px;
+    width: 359px;
     height: 351px;
     position: static;
   }
@@ -7323,6 +7323,7 @@ body.lock {
 .benefit {
   padding-top: 69px;
   padding-bottom: 115px;
+  overflow: hidden;
 }
 .benefit__item {
   height: 100%;
