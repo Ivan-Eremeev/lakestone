@@ -6539,6 +6539,7 @@ body.lock {
 }
 .welcome__video {
   position: relative;
+  overflow: hidden;
 }
 .welcome__video video {
   width: 100%;
