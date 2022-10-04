@@ -88,6 +88,7 @@ window.onload = function () {
       freeMode: true,
       watchSlidesProgress: true,
       preventClicks: false,
+      preventInteractionOnTransition: false,
       breakpoints: {
         992: {
           slidesPerView: 5,
