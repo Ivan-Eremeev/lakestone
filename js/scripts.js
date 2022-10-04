@@ -87,12 +87,19 @@ window.onload = function () {
       spaceBetween: 10,
       freeMode: true,
       watchSlidesProgress: true,
+      allowTouchMove: true,
       breakpoints: {
+        768: {
+          allowTouchMove: false,
+        },
         992: {
           slidesPerView: 5,
+          allowTouchMove: false,
+
         },
         1200: {
           slidesPerView: 7,
+          allowTouchMove: false,
         }
       }
     });
