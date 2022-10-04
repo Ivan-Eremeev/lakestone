@@ -8145,7 +8145,6 @@ body.lock {
 .product__slider #productSliderThumbs .swiper-slide {
   border: 1px solid transparent;
   opacity: 0.8;
-  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
