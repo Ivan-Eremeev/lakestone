@@ -8557,12 +8557,6 @@ body.lock {
 .workflow__slider .swiper-slide-next .workflow__text {
   padding-left: 40px;
 }
-.workflow__slider .swiper-slide-visible .workflow__text {
-  opacity: 1;
-}
-.workflow__slider .swiper-slide-visible .workflow__img {
-  opacity: 1;
-}
 .workflow__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8608,7 +8602,6 @@ body.lock {
 .workflow__img {
   height: 500px;
   margin-bottom: 80px;
-  opacity: 0.5;
 }
 .workflow__img img {
   width: 100%;
@@ -8620,7 +8613,6 @@ body.lock {
   font-size: 18px;
   line-height: 145.5%;
   color: #585858;
-  opacity: 0;
 }
 @media (max-width: 991.98px) {
   .workflow {
