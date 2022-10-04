@@ -1,0 +1,32 @@
+/* text */
+.text { 
+  padding: 40px 0;
+  font-size: 18px;
+  line-height: 145.5%;
+  color: $grayText;
+  .row {
+    margin-left: -40px;
+    margin-right: -40px;
+    > * {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 10px 0;
+    font-size: 16px;
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      > * {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+/* /text */

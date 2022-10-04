@@ -8551,11 +8551,8 @@ body.lock {
 .workflow__slider {
   position: relative;
 }
-.workflow__slider .swiper-slide-active .workflow__text {
-  padding-right: 40px;
-}
-.workflow__slider .swiper-slide-next .workflow__text {
-  padding-left: 40px;
+.workflow__slider .swiper-slide-visible .workflow__img {
+  opacity: 1;
 }
 .workflow__arrow {
   display: -webkit-box;
@@ -8571,7 +8568,8 @@ body.lock {
   height: 65px;
   margin-top: 0;
   background-color: #fff;
-  top: 435px;
+  top: auto;
+  bottom: 0;
   fill: #000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -8601,18 +8599,13 @@ body.lock {
 }
 .workflow__img {
   height: 500px;
-  margin-bottom: 80px;
+  opacity: 0.5;
 }
 .workflow__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-}
-.workflow__text {
-  font-size: 18px;
-  line-height: 145.5%;
-  color: #585858;
 }
 @media (max-width: 991.98px) {
   .workflow {
@@ -8624,13 +8617,6 @@ body.lock {
   }
   .workflow__img {
     height: 256px;
-    margin-bottom: 40px;
-  }
-  .workflow__text {
-    font-size: 14px;
-  }
-  .workflow__arrow {
-    top: 191px;
   }
 }
 @media (max-width: 767.98px) {
@@ -8643,25 +8629,52 @@ body.lock {
   }
   .workflow__img {
     height: 234px;
-    margin-bottom: 25px;
-  }
-  .workflow__text {
-    font-size: 16px;
-  }
-  .workflow__slider .swiper-slide-active .workflow__text {
-    padding-right: 0;
-  }
-  .workflow__slider .swiper-slide-next .workflow__text {
-    padding-left: 0;
+    opacity: 1;
   }
   .workflow__arrow {
     width: 50px;
     height: 50px;
-    top: 184px;
   }
 }
 
 /* /workflow */
+/* text */
+.text {
+  padding: 40px 0;
+  font-size: 18px;
+  line-height: 145.5%;
+  color: #585858;
+}
+.text .row {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.text .row > * {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (max-width: 991.98px) {
+  .text {
+    padding: 20px 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  .text .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .text .row > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* /text */
 /* slogan */
 .slogan {
   padding: 50px 0 135px;
