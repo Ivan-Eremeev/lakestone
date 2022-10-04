@@ -162,11 +162,46 @@ window.onload = function () {
   uploadYoutubeVideo();
 
   // Magnific Popup | Попап окна
-  $('.js-popup-link').magnificPopup({
-    mainClass: 'mfp-fade',
-    type: 'inline',
-    midClick: true
-  });
+  // $('.js-popup-link').magnificPopup({
+  //   mainClass: 'mfp-fade',
+  //   type: 'inline',
+  //   midClick: true
+  // });
+
+  // Модальное окно
+  function modal(modal) {
+    $('.modal-trigger').on('click', function (e) {
+      var $this = $(this),
+        data = $this.data('modal'),
+        thisModal = $(data),
+        exception = $('.js-exception');
+      if (!exception.is(e.target)
+        && exception.has(e.target).length === 0) {
+        modalShow(thisModal);
+      } else {
+        return false;
+      }
+    });
+  };
+  // Открытие модального окна
+  function modalShow(thisModal) {
+    var modalClose = thisModal.find('.js-modal-close'),
+      modalBody = thisModal.find('.modal_body');
+    thisModal.addClass('open');
+    modalClose.on('click', function () {
+      modalHide(thisModal);
+    });
+    modalBody.on('click', function (e) {
+      if ($(this).has(e.target).length === 0) {
+        modalHide(thisModal);
+      }
+    });
+  };
+  // Закрытие модального окна
+  function modalHide(thisModal) {
+    thisModal.removeClass('open');
+  };
+  modal($('.js-modal'));
 
   // Inputmask | Маски для полей ввода
   if ($('input[name="tel"]').length) {
